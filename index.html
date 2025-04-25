@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>WriteFlow</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body class="lightMode">
+        <div class="telaLogin" id="telaLogin">
+           <!--<button id="tema"><i class="bi bi-brightness-high-fill"></i></button>-->
+            <button id="informa" ><i class="bi bi-exclamation-circle">
+                <span class="textoHover">Informações</span></i></a></button>
+            <section class="painelLogin" >
+                <p>Bem-Vindo</p>
+                <input type="password" name="supersenha" id="supersenha" placeholder="Senha">
+                <p id="senhaInvalida"></p>
+                <input type="button" value="Entrar" id="verificar" onclick="verificarSenha()">
+            </section>
+        </div>
+        <div id="telaInformation">
+
+        </div>
+        <div class="telaBlocos"  id="telaBlocos">
+            <header>
+                <h1>WriteFlow</h1>
+                <button id="tema"><i class="bi bi-brightness-high-fill"></i></button>
+                <button onclick="fechar()" ><i class="bi bi-x-lg"></i></button>
+            </header>
+            <section class="tabelaTexto">
+                <button class="bloco" id="newPost"><i class="bi bi-plus-circle-dotted"></i><p>New Post</p></button>
+                <ul id="listaNotas">
+                   <!-- <li> <i class="bi bi-justify-left"></i> alguma coisa</li>-->
+                </ul>
+            </section>
+            <aside class="blocoNota" id="blocoNota">
+                <input type="text" class="titulo" id="titulo" placeholder="Titulo" >
+                <button class="btnSave" onclick="btnSave()"><i class="bi bi-floppy"></i></button>
+                <textarea class="texto" id="texto" placeholder="Comece aqui"></textarea>
+            </aside>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
